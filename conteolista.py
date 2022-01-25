@@ -22,16 +22,3 @@
 
 
 #ingreso = "barco casa barco perro lote lote perro perro naranja tomate "
-
-
-ingreso = input("Ingrese la palabra: ")
-listaPalabras = ingreso.split()
-
-contador_a = {i: listaPalabras.count(i) for i in listaPalabras}
-new_list = list(contador_a.items())
-
-contador_b = []
-for y in new_list:
-    contador_b.append(y[1])
-    
-print(len(listaPalabras) ,"\n", *contador_b, sep= " ")
